@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Validation Form</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+    <form
+        action="/action_page.php" 
+        target="_blank" 
+        method="post"
+        autocomplete="on"
+    >
+     <p>   
+
+    <label for="userId">User Id:</label>
+    
+        <input
+            id="userId"
+            name="userId"
+            type="text"
+            minlength="5"
+            maxlength="12"
+            value=""
+            placeholder="5 to 12 characters"
+            required
+        >     
+    </p>
+
+    <p>
+
+    <label for="password">Password:</label>   
+    
+        <input
+            id="password"
+            name="password"
+            type="password"
+            minlength="7"
+            maxlength="12"
+            placeholder="7 to 12 characters"
+            required
+        >
+    </p> 
+
+    <p>
+
+    <label for="name">Name:</label>
+
+        <input
+            id="name"
+            name="name"
+            type="text"
+            maxlength="30"
+            required
+        >    
+
+    </p>  
+    
+    <p>
+
+    <label for="address">Address:</label>
+        <input
+            id="name"
+            name="name"
+            type="text"
+            optional
+        >    
+    </p>
+
+    <p>
+     
+     <label for="country">Country:</label>
+          <select
+            id="country"
+            name="country"
+            size="1"
+            required
+            > 
+        <option
+            value="southafrica">South Africa</option>
+            
+        <option
+            value="eswatini">Eswatini</option>
+            
+        <option
+            value="Botswana">Botswana</option>
+            
+        <option
+            value="zim">Zimbabwe</option>
+            
+         </select>   
+
+    </p>
+
+    <p>
+      
+     <label for="zipcode">Zip Code:</label>
+        <input
+            id="zipcode"
+            name="zipcode"
+            type="number"
+            maxlength="5"
+        >       
+    </p>
+
+    <p>
+
+        <label for="email">Email:</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                required
+            >    
+    </p>
+
+    <p>
+
+    <div>Gender:</div>
+
+        <input 
+          id="male"
+          name="gender"
+          type="radio"
+          required>
+          
+         <label for="male">Male</label>  
+
+       <input 
+          id="female"
+          name="gender"
+          type="radio">
+       <label for="male">Female</label>
+
+    </p>
+
+    <p>
+        <div>Language:</div>
+
+        <input 
+          id="English"
+          name="Language"
+          type="radio"
+          required>
+          
+         <label for="Language">English</label>  
+
+       <input 
+          id="Non-English"
+          name="Language"
+          type="radio">
+       <label for="Language">Non-English</label>
+
+    </p>
+
+    <p>
+        <label for="comments">About:</label>
+        <textarea></textarea>
+    </p>
+
+    </form>
+</body>
+</html>
